@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+
+:root {
+  --white: hsl(0, 0%, 100%);
+  --stone-100: hsl(30, 54%, 90%);
+  --stone-150: hsl(30, 18%, 87%);
+  --stone-600: hsl(30, 10%, 34%);
+  --stone-900: hsl(24, 5%, 18%);
+  --brown-800: hsl(14, 45%, 36%);
+  --rose-800: hsl(332, 51%, 32%);
+  --rose-50: hsl(330, 100%, 98%);
+}
+
+body {
+  font-family: "Young Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+  padding: 0;
+  margin: 0;
+}
+.receta-img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  vertical-align: middle;
+}
+
+p {
+  color: var(--stone-900);
+  font-family: "Outfit";
+  font-size: 16px;
+}
+
+section {
+  padding: 20px;
+}
+
+.title {
+  color: var(--stone-900);
+  font-weight: 500;
+  font-size: 1.8em;
+  line-height: 1;
+}
+
+.card {
+  background-color: var(--rose-50);
+  font-family: "Outfit";
+  color: var(--stone-600);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.card strong {
+  color: var(--stone-900);
+}
+
+.card-title {
+  color: var(--rose-800);
+  font-size: 1.3em;
+  font-weight: 600;
+}
+
+.card-list {
+  padding: 0 15px;
+  margin: 5px 10px ;
+}
+
+.card-list li {
+  padding: 5px 15px;
+  list-style: disc;
+  color: var(--rose-800);
+}
+
+.card-list li span {
+  color: var(--stone-900);
+}
+
+.subtitle {
+  color: var(--brown-800);
+  font-weight: 500;
+}
+
+.list {
+  padding: 0 15px;
+  margin: 5px 10px;
+  font-family: 'Outfit';
+}
+.list li {
+  color: var(--brown-800);
+  padding: 5px 0;
+  padding-left: 15px;
+}
+
+.list li strong {
+  color: var(--stone-900);
+}
+
+.list li span {
+  color: var(--stone-900);
+}
+
+.line {
+  border-top: 1px solid var(--stone-100);
+}
+.fila-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 50px;
+  font-family: 'Outfit';
+}
+.fila-info span:first-child {
+  color: var(--stone-600);
+}
+.fila-info span:last-child {
+  color: var(--brown-800);
+  font-weight: 600;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 0;
+    background-color: var(--stone-100);
+  }
+  main {
+    max-width: 800px;
+    padding: 35px;
+    background-color: var(--white);
+    border-radius: 30px;
+  }
+  .title {
+    font-size: 3em;
+    line-height: 0.5em;
+  }
+}
